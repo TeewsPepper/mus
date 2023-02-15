@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(8, 25, 58);
+}
+h2 {
+  color: white;
+}
+
+
+
+
+a:hover{
+  color: #ffffff;
+}
+.mus {
+  font-size: 0.5rem;
+}
+
+
+.ancla {
+  font-size: 0.6rem;
+}
+
+.aspect-ratio-16-9 {
+  aspect-ratio: 16/9;
+}
+
+.btn {
+  position: fixed;
+  bottom: 1rem;
+  right: -3.2rem;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.5rem;
+  
+}
+.btn:hover {
+  filter: invert(0.30)
+}
+@media (min-width: 768px) {
+    .btn {
+      bottom: 5rem;
+      right: -1rem;
+      height: 5rem;
+      width: 5rem;
+      font-size: 3rem;
+    }
+}
+/* /////////////////////////////////////////////////// */
+.banner {
+  margin: auto;
+  animation: movimiento 4.5s linear infinite;
+}
+
+@keyframes movimiento{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(3px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+/* // Underline */
+.navegacion {
+  max-width: 80px;
+  text-align: center;
+  /* margin: auto;
+  margin-top: .5rem; */
+}
+
+.navegacion ul li  {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  
+}
+.navegacion ul li a {
+  line-height: 2;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.navegacion ul li::before {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: rgb(212, 184, 193);
+  position: absolute;
+  bottom: 4px;
+  transition: 0.4s ease-out;
+  
+}
+.navegacion ul li:hover::before {
+  width: 100%;
+  
+}
+
